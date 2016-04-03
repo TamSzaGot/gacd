@@ -78,6 +78,7 @@ names(data2) <- names(data1)
 #rm(list = all[-which(all %in% c("data2"))])
 
 # save the tidy data in data2 to file
-write.csv(data2, file = "tidy_data.csv")
+#write.csv(data2, file = "tidy_data.csv")
+write.table(data2, row.names = FALSE, file = "tidy_data.csv")
 
 # end.
